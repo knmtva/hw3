@@ -75,22 +75,17 @@ good.print_health()
 
 class Villian(Goodman):
     people = "monster"
-    def __init__(self, name, nickname, superpower, health_points, catchphrase, damage):
-        super().__init__(name, nickname, superpower, health_points, catchphrase)
-        self.damage = damage
-
     def gen_x(self):
         pass
 
     def crit(self, damage):
-        print(f'damage: {self.damage ** 6}')
+        print(f'damage: {self.damage ** 2}')
 
 
 vivi = Villian(name="L", nickname="Lll", superpower="cloaning", health_points=100, catchphrase="LOL", damage=21)
 print(vivi)
 vivi.gen_x()
 vivi.crit(good.damage)
-
 
 
 
