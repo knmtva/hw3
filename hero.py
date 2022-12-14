@@ -79,7 +79,7 @@ class Villian(Goodman):
         pass
 
     def crit(self, damage):
-        print(f'damage: {self.damage ** 2}')
+        print(f'damage: {damage ** 2}')
 
 
 vivi = Villian(name="L", nickname="Lll", superpower="cloaning", health_points=100, catchphrase="LOL", damage=21)
